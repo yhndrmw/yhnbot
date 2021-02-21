@@ -37,9 +37,12 @@ const ffmpeg = require('fluent-ffmpeg')
 const cd = 4.32e+7
 const { removeBackgroundFromImageFile } = require('remove.bg')
 const { ind } = require('./language')
-const vcard = 'BEGIN:VCARD\n' // KASIH WM GUE
-            + 'VERSION:3.0\n' // YOHANDARA M.W
-            + 'FN:YOHANDARA M.W\n' // JAN NGEYEL AJG
+const vcard = 'BEGIN:VCARD\n' 
+// KASIH WM GUE
+            + 'VERSION:3.0\n' 
+// YOHANDARA M.W
+            + 'FN:YOHANDARA M.W\n' 
+// JAN NGEYEL AJG
             + 'ORG:OWNER Yohandara M.W;\n'
             + 'TEL;type=CELL;type=VOICE;waid=6281235029264:+62 812-3502-9264\n' 
             + 'END:VCARD' 
@@ -88,7 +91,8 @@ const { gabut } = require('./database/menu/gabut')
 const { groupm } = require('./database/menu/group')
 const { download } = require('./database/menu/download')
 const { dompet } = require('./database/menu/dompet')
-const { random } = require('./database/menu/random')
+
+const { random } = require('./database/menu/random')
 const { other } = require('./database/menu/other')
 const { owb } = require('./database/menu/owb')
 const { maker } = require('./database/menu/maker')
@@ -400,7 +404,8 @@ client.on('group-participants-update', async (anu) => {
 			}
 		    const sendPtt = (teks) => {
 		    client.sendMessage(from, audio, mp3, {quoted:mek})
-		    }			
+		    }
+			
 /*
 ]=====> LEVELING <=====[
 */
@@ -2139,70 +2144,6 @@ default :
                   if (budy == 'babi') {
                   costum(`*Astagfirullah Kawan Jangan Toxic Guoobblok*`, text, tescuk, cr)
                   }
-if (budy == 'Iri bilang') { 
-if (!isOwner) return reply(ind.ownerb())
-const pa = fs.readFileSync('assets/pale.mp3')
-client.sendMessage(from, pa, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-costum(`*Yahahaha Pepapepa Pale pepapepa palepale huooooooooo*`, text, tescuk, cr)
-}
-if (budy == 'Lo semua ngentot') { 
-if (!isOwner) return reply(ind.ownerb())
-const ngentot = fs.readFileSync('./assets/ngentot.mp3');
-client.sendMessage(from, ngentot, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-costum(`*Dimana-mana Ku Ngentot*`, text, tescuk, cr)
-}
-if (budy == 'Desah Dong') { 
-if (!isOwner) return reply(ind.ownerb())
-const desah = fs.readFileSync('./assets/desah.mp3');
-client.sendMessage(from, desah, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-costum(`*Mpshh Awwwww>_<*`, text, tescuk, cr)	
-}
-if (budy == 'kiri bilang') { 
-if (!isOwner) return reply(ind.ownerb())
-const irimp3 = fs.readFileSync('./assets/iri.mp3');
-client.sendMessage(from, irimp3, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-costum(`*IRI BILANG BOZZZ YAHAHAHHAA*`, text, tescuk, cr)
-}
-if (budy == 'Bocil') { 
-if (!isOwner) return reply(ind.ownerb())
-const shifa = fs.readFileSync('./assets/shifaa.mp3');
-client.sendMessage(from, shifa, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-}
-if (budy == 'Intro') { 
-if (!isOwner) return reply(ind.ownerb())
-const intr = fs.readFileSync('./assets/introo.mp3');
-client.sendMessage(from, intr, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-costum(`*Yang Baru Masuk Intro Yaa*`, text, tescuk, cr)
-}
-if (budy == 'Sad:)') { 
-if (!isOwner) return reply(ind.ownerb())
-const sad = fs.readFileSync('./assets/sads.mp3');
-client.sendMessage(from, sad, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-costum(`*Go to sleep,Remember No One Love You:)*`, text, tescuk, cr)
-}
-if (budy == 'Yuk ikut om') { 
-if (!isOwner) return reply(ind.ownerb())
-const guy = fs.readFileSync('./assets/gey.mp3');
-client.sendMessage(from, guy, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-costum(`*Om Mau Ngapain Om>_<*`, text, tescuk, cr)
-}
-if (budy == 'Lemot') { 
-if (!isOwner) return reply(ind.ownerb())
-const lag = fs.readFileSync('./assets/leg.mp3');
-client.sendMessage(from, lag, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-costum(`*IYA INI NGELEK JARINGAN TELKOMYET MACAM TAI*`, text, tescuk, cr)
-}
-if (budy == 'Segitu doang') { 
-if (!isOwner) return reply(ind.ownerb())
-const law = fs.readFileSync('./assets/lawan.mp3');
-client.sendMessage(from, law, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-costum(`*Ha sapa nak lawan*`, text, tescuk, cr)
-}
-if (budy == 'Bhs apa bang') { 
-if (!isOwner) return reply(ind.ownerb())
-const ing = fs.readFileSync('./assets/inggris.mp3');
-client.sendMessage(from, ing, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-costum(`*Nda ngerti la bang*`, text, tescuk, cr)
 /*
 ]=====> TQTO <=====[
 > YOHANDARA M.W
